@@ -10,7 +10,7 @@
     "frame": "challenge"
   },
   "criteria": {
-    "BecomeAnExpertMiner":{
+    "HoeBroke":{
       "trigger": "minecraft:location",
       "conditions":{
         "player":  {
