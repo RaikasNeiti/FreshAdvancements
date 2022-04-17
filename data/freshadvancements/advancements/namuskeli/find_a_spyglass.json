@@ -1,0 +1,31 @@
+{
+  "parent": "freshadvancements:namuskeli/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:spyglass"
+    },
+    "title": {"translate": "The Cheap Zoom"},
+    "description": {"color":  "#800080", "translate": "Zooooooom"},
+    "announce_to_chat": true,
+    "frame": "challenge"
+  },
+  "criteria": {
+    "custom_spyglass":{
+      "trigger": "minecraft:inventory_changed",
+      "conditions":{
+        "items": [
+          {
+            "items": [
+              "minecraft:spyglass"
+            ]
+          }
+        ]
+      }
+    }
+},
+  "requirements": [
+    [
+      "custom_spyglass"
+    ]
+  ]
+}
