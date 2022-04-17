@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:wooden_pickaxe"
+      "item": "minecraft:bundle"
     },
     "title": {
-      "translate": "Fresh"
+      "translate": "Namuskeli"
     },
     "description": {
-      "translate": "Freshening your world"
+      "translate": "Get Some Candy"
     },
     "frame": "task",
     "show_toast": false,
