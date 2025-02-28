@@ -1,0 +1,58 @@
+{
+  "parent": "freshadvancements:fresh/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:salmon"
+    },
+    "title": {"translate": "FISH!"},
+    "description": {"translate": "Get a fish"},
+    "announce_to_chat": true,
+    "frame": "challenge",
+    "hidden": false
+  },
+  "criteria": {
+    "cod":{
+      "trigger": "minecraft:inventory_changed",
+      "conditions":{
+          "items": [
+            {
+              "items": [
+                "minecraft:cod"
+              ]
+            }
+          ]
+      }
+    },
+    "salmon":{
+      "trigger": "minecraft:inventory_changed",
+      "conditions":{
+        "items": [
+          {
+            "items": [
+              "minecraft:salmon"
+            ]
+          }
+        ]
+    }
+  },
+    "tropicalfish":{
+      "trigger": "minecraft:inventory_changed",
+      "conditions":{
+        "items": [
+          {
+            "items": [
+              "minecraft:tropical_fish"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+    "cod",
+    "salmon",
+    "tropicalfish"
+  ]
+  ]
+}

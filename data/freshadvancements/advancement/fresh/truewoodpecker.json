@@ -1,0 +1,116 @@
+{
+  "parent": "freshadvancements:fresh/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_axe"
+    },
+    "title": {"translate": "The True Woodpecker"},
+    "description": {"color":  "#800080", "translate": "Chop 100 000 of each wood log"},
+    "announce_to_chat": true,
+    "frame": "challenge"
+  },		
+  "criteria": {
+    "oak_log": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player":  {
+          "type_specific": {
+            "type": "player",
+            "stats": [
+              {
+                "type": "minecraft:mined",
+                "stat": "minecraft:oak_log",
+                "value": {
+                  "min": 100000
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "dark_oak_log": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player":  {
+          "type_specific": {
+            "type": "player",
+            "stats": [
+              {
+                "type": "minecraft:mined",
+                "stat": "minecraft:dark_oak_log",
+                "value": {
+                  "min": 100000
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "birch_log": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player":  {
+          "type_specific": {
+            "type": "player",
+            "stats": [
+              {
+                "type": "minecraft:mined",
+                "stat": "minecraft:birch_log",
+                "value": {
+                  "min": 100000
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "spruce_log": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player":  {
+          "type_specific": {
+            "type": "player",
+            "stats": [
+              {
+                "type": "minecraft:mined",
+                "stat": "minecraft:spruce_log",
+                "value": {
+                  "min": 100000
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "acacia_log": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player":  {
+          "type_specific": {
+            "type": "player",
+            "stats": [
+              {
+                "type": "minecraft:mined",
+                "stat": "minecraft:acacia_log",
+                "value": {
+                  "min": 100000
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["oak_log"],
+    ["dark_oak_log"],
+    ["birch_log"],
+    ["spruce_log"],
+    ["acacia_log"]
+  ]
+}

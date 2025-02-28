@@ -1,0 +1,34 @@
+{
+  "parent": "freshadvancements:fresh/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:skeleton_skull"
+    },
+    "title": {"translate": "69 hehe the funny number"},
+    "description": {"color":  "#800080", "translate": "make the funny number happen"},
+    "announce_to_chat": true,
+    "frame": "challenge",
+    "hidden": false
+  },	
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:deaths",
+								"value": {
+									"min": 69
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

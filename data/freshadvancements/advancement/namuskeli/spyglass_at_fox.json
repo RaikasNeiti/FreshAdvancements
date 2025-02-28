@@ -1,0 +1,47 @@
+{
+    "parent": "freshadvancements:namuskeli/find_a_spyglass",
+    "display": {
+      "icon": {
+        "id": "minecraft:spyglass"
+      },
+      "title": {
+        "translate": "What Does The Fox Say"
+      },
+      "description": {
+        "translate": "'Ring-ding-ding-ding-dingeringeding! Gering-ding-ding-ding-dingeringeding! Gering-ding-ding-ding-dingeringeding!'"
+      },
+      "frame": "challenge",
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "spyglass_at_fox": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "player": {
+                  "looking_at": {
+                    "type": "minecraft:fox"
+                  }
+                }
+              },
+              "entity": "this"
+            }
+          ],
+          "item": {
+            "items": [
+              "minecraft:spyglass"
+            ]
+          }
+        }
+      }
+    },
+    "requirements": [
+      [
+        "spyglass_at_fox"
+      ]
+    ]
+  }

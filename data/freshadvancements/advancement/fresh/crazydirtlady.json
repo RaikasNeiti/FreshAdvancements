@@ -1,0 +1,33 @@
+{
+  "parent": "freshadvancements:fresh/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:dirt"
+    },
+    "title": {"translate": "Crazy Dirt Lady"},
+    "description": {"color":  "#800080", "translate": "Dig 100000 Dirt"},
+    "announce_to_chat": true,
+    "frame": "challenge"
+  },		
+	"criteria": {
+		"mine_dirt": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"type_specific": {
+						"type": "player",
+						"stats": [
+							{
+								"type": "minecraft:mined",
+								"stat": "minecraft:dirt",
+								"value": {
+									"min": 100000
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}
